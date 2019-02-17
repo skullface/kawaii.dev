@@ -1,8 +1,10 @@
 ---
-title: "Welcome to Jekyll!"
-published: false
+title: "Jekyll test post"
+published: true
 ---
 
-**Hello world**, this is my first Jekyll blog post.
+Now we’re going to do the most human thing of all: attempt something futile with a ton of unearned confidence and fail spectacularly!
 
-I hope you like it!
+> Pobody’s nerfect?
+
+In case you were wondering, I am, by definition, the best version of myself.
