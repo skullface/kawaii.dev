@@ -1,0 +1,218 @@
+---
+---
+@import url('https://unpkg.com/primer/build/build.css');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat:400,700');
+
+$black:   #391E0E;
+$mint:    #bceedf;
+
+$pink:    #f35ba6;
+$purple:  #b15cf2;
+$blue:    #5cb4f2;
+$aqua:    #5cf2d8;
+$green:   #5cf26e;
+$yellow:  #dff25c;
+$orange:  #f29f5c;
+$red:     #f26e5c;
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Fredoka One', sans-serif;
+  font-weight: 400;
+  color: $black;
+}
+
+h1 a,
+.f3 a,
+.link-gray-dark {
+  color: $pink !important;
+  text-decoration: underline !important;
+  text-decoration-color: lighten($pink, 24%) !important;
+  &:hover {
+    color: inherit !important;
+    animation: cuteGradient 4s linear infinite;
+  }
+}
+
+@keyframes cuteGradient {
+  0% {
+    color: $pink;
+    text-decoration-color: lighten($pink, 24%);
+  }
+  12.5% {
+    color: $purple;
+    text-decoration-color: lighten($purple, 30%);
+  }
+  25% {
+    color: $blue;
+    text-decoration-color: lighten($blue, 26%);
+  }
+  37.5% {
+    color: $aqua;
+    text-decoration-color: lighten($mint, 6%);
+  }
+  50% {
+    color: $green;
+    text-decoration-color: lighten($green, 25%);
+  }
+  62.5% {
+    color: $yellow;
+    text-decoration-color: lighten($yellow, 23%);
+  }
+  75% {
+    color: $orange;
+    text-decoration-color: lighten($orange, 23%);
+  }
+  87.5% {
+    color: $red;
+    text-decoration-color: lighten($red, 26%);
+  }
+  100% {
+    color: $pink;
+    text-decoration-color: lighten($pink, 24%);
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  &:after {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+
+.bg-gray-light h2:first-of-type:after {
+  content: "🐙🐱";
+}
+
+.bg-gray-light h2:nth-of-type(2):after {
+  content: "💖🌻"
+}
+
+.bg-gray-light h2:nth-of-type(3):after {
+  content: "📒🌟"
+}
+
+
+.text-gray,
+.link-gray {
+  color: $black !important;
+}
+
+.height-full.border,
+.github-component {
+  box-shadow: 3px 3px 0 darken($mint, 8%);
+  border-radius: 20px !important;
+
+  &.bg-white {
+    background-image: url('component-bg.gif');
+    background-position: center 10px ;
+    background-repeat: no-repeat;
+    background-size: 95%;
+  }
+
+  &.p-3 {
+    padding: 48px 32px 32px 32px !important;
+  }
+
+  h1 {
+    font-size: 1.45rem !important;
+    line-height: 1.125 !important;
+    svg, .text-normal {
+      display: none;
+    }
+  }
+
+  div {
+    font-size: 0.8125rem;
+    color: $black;
+  }
+
+  .f3 {
+    font: 400 2rem 'Fredoka One', sans-serif !important;
+  }
+
+  .d-flex.f6 {
+    svg {
+      fill: darken($mint, 12%);
+    }
+    a {
+      color: darken($mint, 12%) !important;
+    }
+    font-weight: 700;
+    a:hover {
+      text-decoration: none;
+      color: $black !important;
+      svg {
+        fill: $black;
+      }
+    }
+  }
+}
+
+img.circle {
+  filter: sepia(1) hue-rotate(280deg);
+  border: solid 3px #fff;
+  box-shadow: 5px 5px 0 $pink;
+}
+
+h1.mb-2.lh-condensed {
+  font-size: 3.25rem;
+  line-height: 0.9125 !important;
+}
+
+.bg-gray-light {
+  background-color: $mint !important;
+}
+
+.border-gray-light {
+  border-color: darken($mint, 8%) !important;
+  border-width: 3px !important;
+}
+
+.flex-self-stretch.bg-white {
+  background: lighten($pink, 20%) !important;
+  &.border-md-right.border-gray-light {
+    border-color: #fff !important;
+    border-width: 12px !important;
+  }
+  svg {
+    fill: $pink;
+  }
+}
+
+/* Thoughts section */
+:not(.github-component).height-full.border {
+  &.bg-white {
+    background-image: url('blog-bg.gif') !important;
+  }
+}
+
+/* Posts: individual page */
+.flex-self-stretch.bg-white,
+.mx-auto .f4.mb-6 {
+  a {
+    font-weight: 700;
+    text-decoration: underline;
+    color: $black !important;
+    padding: 3px 5px;
+    &:hover {
+      background: #fff;
+      border-radius: 3px;
+      animation: cuteGradient 4s linear infinite;
+    }
+  }
+}
+
+
+.flex-self-stretch.bg-white a {
+  text-decoration-color: darken($pink, 1%); 
+}
+
+.mx-auto .f4.mb-6 a {
+  text-decoration-color: darken($mint, 30%);
+}
